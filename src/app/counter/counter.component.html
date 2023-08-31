@@ -1,0 +1,11 @@
+<div class="container text-center mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Contador</h1>
+        <h2>{{ counter }}</h2>
+        <div class="btn-group mt-3" role="group" aria-label="Contador Buttons">
+            <button class="btn btn-success" type="button" (click)="increase()">+1</button>
+            <button class="btn btn-danger" type="button" (click)="decrease()" [disabled]="activeDecrease">-1</button>
+        </div>
+        <button class="btn btn-primary mt-3" type="button" (click)="inactiveDecrease()">Activar/Inactivar Disminución</button>
+    </div>
+</div>
